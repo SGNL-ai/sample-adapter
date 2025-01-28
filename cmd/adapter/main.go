@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"log"
 	"net"
+	"net/http"
 	"os"
 	"time"
 
 	api_adapter_v1 "github.com/sgnl-ai/adapter-framework/api/adapter/v1"
 	"github.com/sgnl-ai/adapter-framework/server"
-	"github.com/sgnl-ai/sample-adapter/pkg/client"
 	"github.com/sgnl-ai/sample-adapter/pkg/scim"
 
 	"google.golang.org/grpc"
@@ -23,9 +23,6 @@ var (
 
 	// Timeout is the timeout for the HTTP client used to make requests to the datasource (seconds).
 	Timeout = flag.Int("timeout", 30, "The timeout for the HTTP client used to make requests to the datasource (seconds)")
-
-	// MaxConcurrency is the number of goroutines run concurrently in AWS adapter.
-	MaxConcurrency = flag.Int("max_concurrency", 20, "The number of goroutines run concurrently in AWS adapter")
 )
 
 func main() {
@@ -46,7 +43,9 @@ func main() {
 	server.RegisterAdapter(
 		adapterServer,
 		"SCIM2.0-1.0.0",
-		scim.NewAdapter(scim.NewClient(client.NewSGNLHttpClient(timeout, "sgnl-SCIM2.0/1.0.0"))),
+		scim.NewAdapter(scim.NewClient(&http.Client{
+			Timeout: timeout,
+		})),
 	)
 
 	api_adapter_v1.RegisterAdapterServer(s, adapterServer)
