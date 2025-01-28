@@ -12,7 +12,7 @@ import (
 
 	framework "github.com/sgnl-ai/adapter-framework"
 	api_adapter_v1 "github.com/sgnl-ai/adapter-framework/api/adapter/v1"
-	customerror "github.com/sgnl-ai/adapter-sgnl/pkg/errors"
+	customerror "github.com/sgnl-ai/sample-adapter/pkg/errors"
 )
 
 // Datasource directly implements a Client interface to allow querying

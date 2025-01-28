@@ -12,9 +12,9 @@ import (
 
 	framework "github.com/sgnl-ai/adapter-framework"
 	api_adapter_v1 "github.com/sgnl-ai/adapter-framework/api/adapter/v1"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/config"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/scim"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/testutil"
+	"github.com/sgnl-ai/sample-adapter/pkg/config"
+	"github.com/sgnl-ai/sample-adapter/pkg/scim"
+	"github.com/sgnl-ai/sample-adapter/pkg/testutil"
 )
 
 var (

@@ -2,7 +2,7 @@
 package scim
 
 import (
-	"github.com/sgnl-ai/adapter-sgnl/pkg/config"
+	"github.com/sgnl-ai/sample-adapter/pkg/config"
 )
 
 type QueryParams struct {

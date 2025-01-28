@@ -1,5 +1,4 @@
 ARG GOLANG_IMAGE=golang:1.23.4-bookworm
-ARG USE_BAZEL_VERSION=6.1.1
 
 # STAGE 1: build...
 FROM ${GOLANG_IMAGE} as build
@@ -22,7 +21,6 @@ WORKDIR /sgnl
 
 COPY --from=build --chown=nonroot:nonroot /go/bin/gops /sgnl/gops
 COPY --from=build --chown=nonroot:nonroot /sgnl/adapter /sgnl/adapter
-COPY --from=build --chown=nonroot:nonroot /app/pkg/mock/servicenow/fixtures/*.yaml /sgnl/pkg/mock/servicenow/fixtures/
 
 EXPOSE 8080
 

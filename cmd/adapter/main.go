@@ -11,8 +11,8 @@ import (
 
 	api_adapter_v1 "github.com/sgnl-ai/adapter-framework/api/adapter/v1"
 	"github.com/sgnl-ai/adapter-framework/server"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/client"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/scim"
+	"github.com/sgnl-ai/sample-adapter/pkg/client"
+	"github.com/sgnl-ai/sample-adapter/pkg/scim"
 
 	"google.golang.org/grpc"
 )

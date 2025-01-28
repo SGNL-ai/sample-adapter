@@ -1,4 +1,4 @@
-module github.com/sgnl-ai/adapter-sgnl
+module github.com/sgnl-ai/sample-adapter
 
 go 1.23.4
 

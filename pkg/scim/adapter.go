@@ -9,8 +9,8 @@ import (
 	framework "github.com/sgnl-ai/adapter-framework"
 	api_adapter_v1 "github.com/sgnl-ai/adapter-framework/api/adapter/v1"
 	"github.com/sgnl-ai/adapter-framework/web"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/auth"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/config"
+	"github.com/sgnl-ai/sample-adapter/pkg/auth"
+	"github.com/sgnl-ai/sample-adapter/pkg/config"
 )
 
 // Adapter implements the framework.Adapter interface to query pages of objects

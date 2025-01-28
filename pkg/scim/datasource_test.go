@@ -10,8 +10,8 @@ import (
 	"time"
 
 	framework "github.com/sgnl-ai/adapter-framework"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/scim"
-	"github.com/sgnl-ai/adapter-sgnl/pkg/testutil"
+	"github.com/sgnl-ai/sample-adapter/pkg/scim"
+	"github.com/sgnl-ai/sample-adapter/pkg/testutil"
 )
 
 var (
