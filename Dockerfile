@@ -1,7 +1,7 @@
 ARG GOLANG_IMAGE=golang:1.23.4-bookworm
 
 # STAGE 1: build...
-FROM ${GOLANG_IMAGE} as build
+FROM ${GOLANG_IMAGE} AS build
 
 WORKDIR /app
 COPY . ./
