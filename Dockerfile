@@ -1,4 +1,4 @@
-ARG GOLANG_IMAGE=golang:1.23.4-bookworm
+ARG GOLANG_IMAGE=golang:1.24-bookworm
 
 # STAGE 1: build...
 FROM ${GOLANG_IMAGE} AS build
