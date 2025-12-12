@@ -1,6 +1,6 @@
 module github.com/sgnl-ai/sample-adapter
 
-go 1.23.4
+go 1.25
 
 require (
 	github.com/sgnl-ai/adapter-framework v0.16.0
