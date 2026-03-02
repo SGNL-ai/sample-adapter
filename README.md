@@ -101,7 +101,7 @@ An example gRPC request:
                 "external_id": "id",
                 "type": "ATTRIBUTE_TYPE_STRING",
                 "id": "id",
-		"unique_id", true
+			"unique_id", true
             }
         ],
         "external_id": "Users",
