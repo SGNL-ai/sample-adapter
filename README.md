@@ -72,7 +72,7 @@ docker run -d --name sample-adapter \
 
 By default, the adapter listens on port 8080. You can use Postman to send a gRPC request to the adapter by following these steps:
 
-1. Define the [`GetPage` Protobuf definition](https://github.com/SGNL-ai/adapter-framework/blob/f2cafb0d963b54c350350967906ce59776d720a1/api/adapter/v1/adapter.proto).
+1. Define the [`GetPage` Protobuf definition](https://github.com/SGNL-ai/adapter-framework/blob/main/api/adapter/v1/adapter.proto).
 
 2. In the sidebar, click on **Collections** and create a new collection with the type set to **gRPC**.
 
@@ -100,7 +100,8 @@ An example gRPC request:
             {
                 "external_id": "id",
                 "type": "ATTRIBUTE_TYPE_STRING",
-                "id": "id"
+                "id": "id",
+				"unique_id", true
             }
         ],
         "external_id": "Users",
